@@ -34,7 +34,6 @@ The project demonstrates step-by-step cleaning and transformation of a dataset c
 * Jupyter Notebook
 * Pandas
 * NumPy
-* Pandas
 * Matplotlib
 
 ---
