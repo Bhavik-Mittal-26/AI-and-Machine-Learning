@@ -1,66 +1,118 @@
-# Data Preprocessing Pipeline
+📊 Mini Project - Data Preprocessing & Regression Model
 
-This repository contains a mini project on **data preprocessing** using Python in Jupyter Notebook.
-The project demonstrates step-by-step cleaning and transformation of a dataset containing both **categorical and numerical features** to prepare it for further analysis or machine learning tasks.
+📌 Introduction
 
----
+This project focuses on end-to-end data preprocessing and regression model building. The main objective is to clean, transform, and prepare raw data for machine learning tasks, followed by implementing an Ordinary Least Squares (OLS) Regression model. It demonstrates important concepts of data cleaning, handling missing values, encoding categorical data, feature engineering, and model evaluation.
 
-## 🔹 Features of the Project
-
-* Column renaming and proper naming conventions
-* Removing unwanted characters (%, years, months, etc.)
-* Handling missing values in numerical and categorical data
-* Splitting dataset into numerical and categorical subsets
-* Correlation analysis for numerical features
-* Outlier treatment using median replacement
-* One-Hot Encoding for categorical variables
-* Merging cleaned numerical and categorical datasets into a final processed dataset
 
 ---
 
-## 📂 File Structure
+🚀 Features
 
-```
-📦 Data-Preprocessing-Pipeline
- ┣ 📜 data_preprocessing.ipynb   # Jupyter Notebook with complete project
- ┣ 📜 README.md                  # Project documentation
-```
+Handling missing values (numerical & categorical)
 
----
+Outlier detection and treatment using IQR method
 
-## 🛠️ Technologies Used
+Encoding categorical features (One-Hot Encoding)
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Matplotlib
+Data transformation and standardization
 
----
+Feature engineering for better model performance
 
-## 🚀 How to Use
+Splitting dataset into training and testing
 
-1. Clone the repository
+Building and evaluating OLS Regression models
 
-   ```bash
-   git clone https://github.com/your-username/Data-Preprocessing-Pipeline.git
-   cd Data-Preprocessing-Pipeline
-   ```
-2. Open the notebook in Jupyter:
 
-   ```bash
-   jupyter notebook data_preprocessing.ipynb
-   ```
 
 ---
 
-## 📌 Topics
+🛠️ Technology Used
 
-`python`, `jupyter-notebook`, `data-preprocessing`, `data-cleaning`, `feature-engineering`, `machine-learning`, `pandas`, `numpy`
+Python
+
+Jupyter Notebook
+
+Libraries:
+
+Pandas
+
+NumPy
+
+Matplotlib / Seaborn (for visualization)
+
+Scikit-learn
+
+Statsmodels (for OLS Regression)
+
+
+
 
 ---
 
-## ✨ Author
+📂 How to Use
 
-* **Bhavik Mittal**
-  AI & Data Science Enthusiast
+1. Clone or download the project notebook.
+
+
+2. Install the required libraries:
+
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
+
+
+3. Open the notebook in Jupyter:
+
+jupyter notebook "Mini project 1.ipynb"
+
+
+4. Run cells step by step to:
+
+Preprocess data
+
+Apply transformations
+
+Train and evaluate the regression model
+
+
+
+
+
+---
+
+📖 Topics Covered
+
+Data Cleaning & Preprocessing
+
+Handling duplicates
+
+Missing value treatment (numerical & categorical)
+
+Outlier detection (Boxplot, IQR method)
+
+
+Data Transformation
+
+Standardization & Normalization
+
+Feature engineering
+
+
+Categorical Data Encoding
+
+Dataset Splitting (Train/Test)
+
+Model Building
+
+OLS Regression
+
+Model evaluation (R², comparison between transformations)
+
+
+
+
+---
+
+✅ Conclusion
+
+This project helps in understanding the workflow of data preprocessing to model building. By exploring multiple transformations and comparing their effects on regression accuracy, it provides hands-on experience in preparing datasets for predictive modeling.
+
