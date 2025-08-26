@@ -1,4 +1,4 @@
-📊 **Mini Project - Data Preprocessing & Regression Model**
+** 1) 📊 **Mini Project - Data Preprocessing & Regression Model**
 
 ---
 
@@ -78,3 +78,81 @@ This project focuses on end-to-end data preprocessing and regression model build
 ### ✅ Conclusion
 
 This project helps in understanding the workflow of **data preprocessing to model building**. By exploring multiple transformations and comparing their effects on regression accuracy, it provides **hands-on experience in preparing datasets for predictive modeling**.
+
+
+
+
+
+
+
+
+** 2) # 📊 Liver Disease Prediction - README
+
+## 📌 Project Overview
+
+This project focuses on predicting whether a liver disease case is **curable** or **not curable** based on patient medical data. The model is trained using different classification algorithms and evaluated using standard performance metrics.
+
+## 🚀 Features
+
+* Data preprocessing (cleaning, transformations, handling missing values)
+* Implementation of multiple machine learning classification models:
+
+  * Logistic Regression
+  * Naive Bayes
+  * Support Vector Machine (SVM)
+  * K-Nearest Neighbors (KNN)
+  * Decision Tree
+  * Random Forest
+* Model evaluation using:
+
+  * Accuracy
+  * Precision
+  * Recall
+  * F1 Score
+* Performance comparison of algorithms
+
+## 🛠️ Tech Stack
+
+* **Language:** Python 🐍
+* **Libraries:**
+
+  * `pandas`, `numpy` → Data handling
+  * `scikit-learn` → Machine Learning models & metrics
+  * `matplotlib`, `seaborn` → Visualization
+
+## 📂 Project Files
+
+* `Predicted modeling on liver data (3).ipynb` → Main Jupyter Notebook with preprocessing, model building, and evaluation
+* `README.md` → Project documentation (this file)
+
+## 📊 Evaluation Metrics
+
+The model is evaluated using the following:
+
+```python
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+y_train_class = (y_train_pred > 0.5).astype(int)
+
+print("Accuracy :", accuracy_score(train["Report_curable"], y_train_class))
+print("Precision:", precision_score(train["Report_curable"], y_train_class))
+print("Recall   :", recall_score(train["Report_curable"], y_train_class))
+print("F1 Score :", f1_score(train["Report_curable"], y_train_class))
+```
+
+## 📈 Possible Improvements
+
+* Outlier treatment
+* Feature engineering
+* Hyperparameter tuning
+* Using ensemble methods (XGBoost, Gradient Boosting)
+* Cross-validation for robust evaluation
+
+## 🎯 Goal
+
+To build an accurate and reliable machine learning model that can help in early prediction and categorization of liver disease outcomes, assisting healthcare professionals in decision-making.
+
+---
+
+✍️ **Author:** Bhavik Mittal
+
