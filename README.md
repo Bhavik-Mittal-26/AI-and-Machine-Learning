@@ -1,4 +1,4 @@
-** 1) 📊 **Mini Project - Data Preprocessing & Regression Model**
+ 1) 📊 **Mini Project - Data Preprocessing & Regression Model**
 
 ---
 
@@ -86,7 +86,7 @@ This project helps in understanding the workflow of **data preprocessing to mode
 
 
 
-** 2) # 📊 Liver Disease Prediction - README
+ 2) # 📊 Liver Disease Prediction - README
 
 ## 📌 Project Overview
 
