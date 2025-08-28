@@ -156,3 +156,78 @@ To build an accurate and reliable machine learning model that can help in early 
 
 ✍️ **Author:** Bhavik Mittal
 
+
+
+
+3) # Project: Random Forest Classification with Model Evaluation
+
+## Overview
+
+This project demonstrates the implementation of **Random Forest Classification** along with other machine learning models such as **K-Nearest Neighbors (KNN)** and **Decision Tree Classifier**. The dataset is preprocessed, trained, and evaluated using multiple metrics to assess model performance.
+
+## Key Features
+
+* Data Preprocessing (handling missing values, transformations, outlier treatment)
+* Model Training using:
+
+  * Random Forest Classifier
+  * Decision Tree Classifier
+  * K-Nearest Neighbors (KNN)
+* Hyperparameter Tuning using **GridSearchCV**
+* Model Evaluation using:
+
+  * Accuracy
+  * Precision
+  * Recall
+  * F1 Score
+
+## Technologies Used
+
+* Python 3
+* Scikit-learn
+* Pandas
+* NumPy
+* Jupyter Notebook
+
+## Steps Performed
+
+1. **Import Libraries**: Loaded required libraries for machine learning and evaluation.
+2. **Data Preprocessing**: Cleaned and transformed dataset to prepare for model training.
+3. **Model Building**:
+
+   * Random Forest Classifier was trained with GridSearchCV for hyperparameter optimization.
+   * Decision Tree and KNN were also implemented for comparison.
+4. **Evaluation**:
+
+   * Predictions compared with actual labels.
+   * Performance evaluated using accuracy, precision, recall, and F1 score.
+
+## Results
+
+* The models were evaluated and compared.
+* Random Forest generally provided higher performance compared to Decision Tree and KNN.
+
+## How to Run
+
+1. Install required libraries:
+
+   ```bash
+   pip install scikit-learn pandas numpy jupyter
+   ```
+2. Open the Jupyter Notebook:
+
+   ```bash
+   jupyter notebook "Mini project (Random Forest).ipynb"
+   ```
+3. Run cells step by step to see preprocessing, training, and evaluation results.
+
+## Future Improvements
+
+* Perform outlier treatment and feature transformation for better accuracy.
+* Try additional models like **SVM, Logistic Regression, Gradient Boosting**.
+* Implement feature importance visualization.
+
+## Author
+
+Bhavik Mittal
+
