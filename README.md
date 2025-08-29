@@ -231,3 +231,107 @@ This project demonstrates the implementation of **Random Forest Classification**
 
 Bhavik Mittal
 
+
+
+4)# 📊 Naive Bayes on Healthcare Dataset
+
+## 📌 Project Overview
+
+This project applies **Naive Bayes classifiers** (GaussianNB & BernoulliNB) on a healthcare dataset (Diabetes Prediction). The aim is to classify patients as **diabetic or non-diabetic** based on various health parameters such as glucose, blood pressure, insulin, BMI, etc.
+
+---
+
+## ⚙️ Steps Performed
+
+### 1. Data Preprocessing
+
+* Loaded the diabetes dataset.
+* Replaced invalid values (like 0 in Glucose, BloodPressure, Insulin, SkinThickness, BMI) with **NaN**.
+* Imputed missing values using **median strategy**.
+* Applied transformations to handle skewness:
+
+  * `np.log1p()` for Insulin
+  * `np.sqrt()` for SkinThickness
+* Feature engineering:
+
+  * Created bins for **Age Groups** (20-30, 30-40, 40-50, 50-60, 60+)
+  * Created BMI categories (Underweight, Normal, Overweight, Obese)
+* Converted categorical bins into dummy variables.
+* Scaled numerical features using **StandardScaler**.
+
+---
+
+### 2. Model Training
+
+Two models were trained and evaluated:
+
+* **Gaussian Naive Bayes** → Suitable for continuous features.
+* **Bernoulli Naive Bayes** → Suitable for binary features.
+
+---
+
+### 3. Model Evaluation
+
+* Compared **Train Accuracy** and **Test Accuracy** of both models.
+* Used metrics: **Accuracy, Precision, Recall, F1-score**.
+* Observed class imbalance (500 non-diabetic, 268 diabetic cases) → considered in evaluation.
+
+---
+
+## 📈 Results
+
+* **GaussianNB** generally performs better for this dataset since features are continuous.
+* **BernoulliNB** can still be tested after binarizing features.
+* Both models provide a good baseline for classification.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Pandas, NumPy** (Data Handling)
+* **Matplotlib, Seaborn** (EDA & Visualization)
+* **Scikit-learn** (Modeling & Evaluation)
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repo:
+
+   ```bash
+   git clone <your-repo-link>
+   ```
+2. Navigate into the folder:
+
+   ```bash
+   cd naive-bayes-healthcare
+   ```
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the notebook:
+
+   ```bash
+   jupyter notebook "Mini project (Naive Bayes Healthcare dataset).ipynb"
+   ```
+
+---
+
+## 📌 Future Improvements
+
+* Use **SMOTE** or class weights to handle imbalance.
+* Try **Multinomial Naive Bayes** on discretized features.
+* Compare with other models: Decision Tree, Random Forest, Logistic Regression.
+* Hyperparameter tuning for better performance.
+
+---
+
+## 👨‍💻 Author
+
+* **Bhavik Mittal**
+  Poornima College of Engineering | AI Enthusiast
+
+
